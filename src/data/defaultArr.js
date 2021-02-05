@@ -5,6 +5,7 @@ import GibersPostPhoto from "./dataImg/GibersPostPhoto.jpg";
 
 const defaultPosts = [
   {
+    id: 1,
     user: users[0],
     description: "my new car",
     date: "Wed Feb 21, 2016",
@@ -23,6 +24,7 @@ const defaultPosts = [
     },
   },
   {
+    id: 2,
     user: users[1],
     description: "i am on fire",
     date: "Mon Feb 29, 2020",

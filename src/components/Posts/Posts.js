@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-import {getPostsArr} from "../../Pedux/Actions/Actions";
+import { getPostsArr } from "../../Pedux/Actions/Actions";
 import Post from "../Post/Post";
 import { PostReducer } from "../../Pedux/Reducers/PostReducer";
 
@@ -30,8 +30,8 @@ class Posts extends Component {
             isSaved={post.savesInfo.isSaved}
             reposts={post.repostsInfo.reposts}
             isReposted={post.repostsInfo.isReposted}
-            id={i}
-            key={i}
+            id={post.id}
+            key={post.id}
           />
         ))}
       </div>
@@ -47,7 +47,7 @@ const getStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    getPostsArr: ()=>dispatch(getPostsArr()),
+    getPostsArr: () => dispatch(getPostsArr()),
   };
 };
 
